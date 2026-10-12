@@ -46,7 +46,7 @@ st.markdown("""
 def load_ovasight_model():
     model_path = "ev_mobilenet_mobile.keras"
     if not os.path.exists(model_path):
-        model_path = "/content/ev_mobilenet_mobile.keras"
+        model_path = "/content/ev_cnn_mobile.keras"
 
     def mse(y_true, y_pred):
         return tf.reduce_mean(tf.square(y_true - y_pred))
